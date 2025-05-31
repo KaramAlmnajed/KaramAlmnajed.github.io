@@ -30,8 +30,8 @@
     <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
-    <link rel="icon" href="./favicon.png" type="image/x-icon">
-    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <link rel="manifest" href="./site.webmanifest">
     <meta name="theme-color" content="#ffffff">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
@@ -90,17 +90,19 @@
     <header id="home" class="hero section">
         <div class="container">
             <div class="hero-content">
-                <div class="hero-image left">
-                    <img src="undraw_business-analytics_y8m6.svg" alt="Business Analytics" class="hero-img" loading="lazy">
-                </div>
                 <div class="hero-text">
-                    <h1>Fueling Data-Driven Decisions & Strategic Growth</h1>
-                    <p class="hero-subtitle">Discover your data's hidden potential</p>
-                    <p class="hero-description">Take the first step to uncover actionable insights tailored to your business.</p>
+                    <h1>Precision-Crafted Data Solutions</h1>
+                    <p class="hero-subtitle">Elevate Your Strategic Vision</p>
+                    <p class="hero-description">Discover the Difference</p>
                     <a href="#projects" class="cta-button">Explore My Work</a>
                 </div>
-                <div class="hero-image right">
-                    <img src="undraw_data-trends_kv5v.svg" alt="Data Trends Visualization" class="hero-img" loading="lazy">
+                <div class="hero-images-container">
+                    <div class="hero-image">
+                        <img src="undraw_business-analytics_y8m6.svg" alt="Business Analytics" class="hero-img" loading="lazy">
+                    </div>
+                    <div class="hero-image">
+                        <img src="undraw_data-processing_z2q6.svg" alt="Data Processing" class="hero-img" loading="lazy">
+                    </div>
                 </div>
             </div>
         </div>
@@ -108,122 +110,109 @@
 
     <section id="expertise-certifications" class="section">
         <div class="container">
-            <h2>Delivering data-driven solutions with expertise and innovation</h2>
-            
-            <div class="cert-grid">
-                <!-- Academic Excellence Card -->
-                <div class="cert-item">
-                    <div class="cert-header">
-                        <img src="undraw_certificate_71gt.svg" alt="Academic Excellence" class="cert-icon" loading="lazy">
-                        <img src="uopeople.png" alt="University of the People" class="institution-icon" loading="lazy">
+            <h2 class="section-title">Credentials & Expertise</h2>
+            <div class="skills-grid">
+                <!-- Education Card -->
+                <div class="skill-card">
+                    <div class="skill-image">
+                        <img src="undraw_certificate_71gt.svg" alt="Education" loading="lazy" style="width: 80px; height: 80px; object-fit: contain;">
                     </div>
-                    <h3>Academic Achievements</h3>
-                    <p>Bachelor of Computer Science – University of the People</p>
-                    <p class="achievement">Dean's List Recognition for Academic Excellence</p>
-                    <div class="tags">
-                        <span class="tag">Computer Science</span>
-                        <span class="tag">Academic Excellence</span>
-                        <span class="tag">Dean's List</span>
+                    <div class="skill-content">
+                        <h3>B.Sc. Computer Science</h3>
+                        <p class="institution">University of the People — Dean's List</p>
+                        <p class="description">Strong foundations. Disciplined execution.</p>
                     </div>
                 </div>
 
                 <!-- Certifications Card -->
-                <div class="cert-item">
-                    <div class="cert-header">
-                        <div class="institution-icons">
-                            <img src="stanford.png" alt="Stanford" class="institution-icon" loading="lazy">
-                            <img src="google.png" alt="Google" class="institution-icon" loading="lazy">
-                            <img src="deeplearning.png" alt="DeepLearning.AI" class="institution-icon" loading="lazy">
-                        </div>
+                <div class="skill-card">
+                    <div class="skill-image">
+                        <img src="undraw_goals_0pov.svg" alt="Certifications" loading="lazy" style="width: 80px; height: 80px; object-fit: contain;">
                     </div>
-                    <h3>Professional Certifications</h3>
-                    <p>87+ Specialized Professional Certifications</p>
-                    <div class="tags">
-                        <span class="tag">Machine Learning – Stanford</span>
-                        <span class="tag">Advanced Data Analytics – Google</span>
-                        <span class="tag">Math for ML – DeepLearning.AI</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="expertise-grid">
-                <!-- Machine Learning Expertise -->
-                <div class="expertise-item">
-                    <img src="undraw_code-thinking_0vf2.svg" alt="Machine Learning" class="expertise-icon">
-                    <h3>Machine Learning & Predictive Analytics</h3>
-                    <p>Building intelligent systems that learn and adapt</p>
-                    <div class="tags">
-                        <span class="tag">Neural Networks</span>
-                        <span class="tag">Deep Learning</span>
-                        <span class="tag">Predictive Modeling</span>
+                    <div class="skill-content">
+                        <h3>Academic Mastery</h3>
+                        <p class="institution">Stanford, DeepLearning.AI, Google</p>
+                        <p class="description">87+ certifications. Depth through dedication.</p>
                     </div>
                 </div>
 
-                <!-- Data Workflow Expertise -->
-                <div class="expertise-item">
-                    <img src="undraw_data-processing_z2q6.svg" alt="Data Workflow" class="expertise-icon">
-                    <h3>Data Workflow Automation</h3>
-                    <p>Streamlining processes for maximum efficiency</p>
-                    <div class="tags">
-                        <span class="tag">Process Automation</span>
-                        <span class="tag">ETL Pipelines</span>
-                        <span class="tag">Workflow Optimization</span>
+                <!-- Machine Learning Card -->
+                <div class="skill-card">
+                    <div class="skill-image">
+                        <img src="undraw_code-thinking_0vf2.svg" alt="Machine Learning" loading="lazy" style="width: 80px; height: 80px; object-fit: contain;">
+                    </div>
+                    <div class="skill-content">
+                        <h3>Machine Learning Systems</h3>
+                        <p class="description">Building models that evolve with purpose. From logic to learning, built to adapt.</p>
                     </div>
                 </div>
 
-                <!-- Business Intelligence Expertise -->
-                <div class="expertise-item">
-                    <img src="undraw_business-analytics_y8m6.svg" alt="Business Intelligence" class="expertise-icon">
-                    <h3>Business Intelligence & Statistical Modeling</h3>
-                    <p>Transforming data into actionable insights</p>
-                    <div class="tags">
-                        <span class="tag">Statistical Analysis</span>
-                        <span class="tag">Data Visualization</span>
-                        <span class="tag">Business Metrics</span>
+                <!-- AI Card -->
+                <div class="skill-card">
+                    <div class="skill-image">
+                        <img src="undraw_creative-thinking_ruwx.svg" alt="Artificial Intelligence" loading="lazy" style="width: 80px; height: 80px; object-fit: contain;">
+                    </div>
+                    <div class="skill-content">
+                        <h3>Artificial Intelligence</h3>
+                        <p class="description">Designing cognition at scale. From neural networks to real-world impact.</p>
+                    </div>
+                </div>
+
+                <!-- Data Architecture Card -->
+                <div class="skill-card">
+                    <div class="skill-image">
+                        <img src="undraw_organizing-data_uns9.svg" alt="Data Architecture" loading="lazy" style="width: 80px; height: 80px; object-fit: contain;">
+                    </div>
+                    <div class="skill-content">
+                        <h3>Data Architecture</h3>
+                        <p class="description">Orchestrating clean, automated data flows. ETL. Pipelines. Precision at every stage.</p>
+                    </div>
+                </div>
+
+                <!-- Strategic Intelligence Card -->
+                <div class="skill-card">
+                    <div class="skill-image">
+                        <img src="undraw_analytics_6mru.svg" alt="Strategic Intelligence" loading="lazy" style="width: 80px; height: 80px; object-fit: contain;">
+                    </div>
+                    <div class="skill-content">
+                        <h3>Strategic Intelligence</h3>
+                        <p class="description">Turning data into direction. Clear insights. Smarter moves. Sharper vision.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="about" class="section">
+    <section id="about" class="section" style="background-color: #daecf6;">
         <div class="container">
             <div class="about-content">
-                <div class="about-image">
-                    <div class="about-image-grid">
-                        <img src="undraw_thought-process_pavs.svg" alt="Analytical Thinking Process" class="about-img" loading="lazy">
-                        <img src="undraw_creative-thinking_ruwx.svg" alt="Creative Problem Solving" class="about-img" loading="lazy">
-                        <img src="undraw_data_0ml2.svg" alt="Data Science" class="about-img" loading="lazy">
-                    </div>
-                </div>
                 <div class="about-text">
-                    <h2>Data Scientist | AI Strategist | Problem Solver</h2>
-                    <p>I'm a data scientist driven by a passion for uncovering patterns and transforming raw data into actionable insights. With expertise in predictive modeling, visualization, and automation, I craft scalable solutions that turn ambiguity into clarity.</p>
+                    <h2>Data Scientist. AI Strategist. Problem Solver.</h2>
+                    <p class="subtitle">Transforming complex data into strategic clarity.</p>
+                    <p class="description">Expert in predictive modeling, visualization, and automation.</p>
                     <div class="tags">
-                        <span class="tag">Lifelong Learner</span>
-                        <span class="tag">AI Optimist</span>
-                        <span class="tag">Cross-Disciplinary Thinker</span>
+                        <span>Lifelong Learner</span>
+                        <span>AI Optimist</span>
                     </div>
-                    <a href="#contact" class="cta-button">Work with me</a>
+                    <a href="#contact" class="cta-button">Let's collaborate</a>
+                    <div class="about-image-container">
+                        <img src="undraw_thought-process_pavs.svg" alt="Analytical Thinking Process" class="about-img" loading="lazy">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="data-strategy" class="section">
+    <section id="data-solutions" class="section" style="background-color: #f8f9fa;">
         <div class="container">
-            <div class="strategy-content">
-                <div class="strategy-text">
-                    <h2>Shape, Sharpen, and Unlock Your Data</h2>
-                    <p>Every business has unique data challenges. Whether you're looking to predict trends, automate workflows, or build smarter decision-making systems, I can help you uncover the right strategy for your goals.</p>
-                    <a href="#impact" class="cta-button">Explore my solutions</a>
-                </div>
-                <div class="strategy-visual">
-                    <div class="strategy-image-grid">
-                        <img src="undraw_data-trends_kv5v.svg" alt="Data Trends Analysis" class="strategy-img" loading="lazy">
-                        <img src="undraw_detailed-analysis_w5a8.svg" alt="Detailed Analysis" class="strategy-img" loading="lazy">
-                        <img src="undraw_organizing-data_uns9.svg" alt="Data Organization" class="strategy-img" loading="lazy">
-                    </div>
+            <div class="section-content" style="text-align: center;">
+                <h2>Refine and Empower Your Data</h2>
+                <p>Every business faces distinct data challenges. Whether you need to forecast trends, automate workflows, or build smarter decision systems, I'll craft the strategy that aligns with your goals.</p>
+                <a href="#impact" class="cta-button">Explore Solutions</a>
+                
+                <!-- Single centered image -->
+                <div class="solutions-images" style="margin-top: 30px;">
+                    <img src="undraw_detailed-analysis_w5a8.svg" alt="Detailed Analysis" loading="lazy" style="max-width: 100%; height: auto; max-height: 300px;">
                 </div>
             </div>
         </div>
@@ -231,35 +220,43 @@
 
     <section id="impact" class="section">
         <div class="container">
-            <h2>I help businesses unlock data to solve problems, automate workflows, and make smarter decisions</h2>
-            <div class="impact-grid">
-                <div class="impact-item">
-                    <div class="impact-image">
-                        <img src="undraw_growth-analytics_bhy7.svg" alt="Predictive Analytics" class="impact-img" loading="lazy">
+            <h2 class="section-title">Unlock Data for Smarter Decisions</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-content">
+                        <div class="impact-image">
+                            <img src="undraw_growth-analytics_bhy7.svg" alt="Predictive Analytics" class="skill-icon" loading="lazy">
+                        </div>
+                        <h3>Predictive Analytics</h3>
+                        <p class="description">Build models to forecast trends, optimize processes, and uncover hidden opportunities.</p>
                     </div>
-                    <h3>Predictive Analytics</h3>
-                    <p>Build models to forecast trends, optimize processes, and uncover hidden opportunities.</p>
                 </div>
-                <div class="impact-item">
-                    <div class="impact-image">
-                        <img src="undraw_working_n9u0.svg" alt="Workflow Automation" class="impact-img" loading="lazy">
+                <div class="skill-card">
+                    <div class="skill-content">
+                        <div class="impact-image">
+                            <img src="undraw_working_n9u0.svg" alt="Workflow Automation" class="skill-icon" loading="lazy">
+                        </div>
+                        <h3>Workflow Automation</h3>
+                        <p class="description">Turn repetitive tasks into automated, error-free processes using Python and SQL.</p>
                     </div>
-                    <h3>Workflow Automation</h3>
-                    <p>Turn repetitive tasks into automated, error-free processes using Python and SQL.</p>
                 </div>
-                <div class="impact-item">
-                    <div class="impact-image">
-                        <img src="undraw_team-collaboration_phnf.svg" alt="AI Strategy" class="impact-img" loading="lazy">
+                <div class="skill-card">
+                    <div class="skill-content">
+                        <div class="impact-image">
+                            <img src="undraw_team-collaboration_phnf.svg" alt="AI Strategy" class="skill-icon" loading="lazy">
+                        </div>
+                        <h3>AI Strategy</h3>
+                        <p class="description">Scale solutions that enhance customer experiences and operational efficiency.</p>
                     </div>
-                    <h3>AI Strategy</h3>
-                    <p>Scale solutions that enhance customer experiences and operational efficiency.</p>
                 </div>
-                <div class="impact-item">
-                    <div class="impact-image">
-                        <img src="undraw_dashboard_p93p.svg" alt="Interactive Dashboards" class="impact-img" loading="lazy">
+                <div class="skill-card">
+                    <div class="skill-content">
+                        <div class="impact-image">
+                            <img src="undraw_dashboard_p93p.svg" alt="Interactive Dashboards" class="skill-icon" loading="lazy">
+                        </div>
+                        <h3>Interactive Dashboards</h3>
+                        <p class="description">Create dynamic visualizations that transform complex data into clear, actionable insights.</p>
                     </div>
-                    <h3>Interactive Dashboards</h3>
-                    <p>Create dynamic visualizations that transform complex data into clear, actionable insights.</p>
                 </div>
             </div>
         </div>
@@ -267,7 +264,7 @@
 
     <section id="projects" class="section">
         <div class="container">
-            <h2>Building solutions that solve real-world problems with meaningful results</h2>
+            <h2>Solutions for Real-World Impact</h2>
             <div class="project-grid">
                 <div class="project-card" itemscope itemtype="https://schema.org/SoftwareSourceCode">
                     <div class="project-image">
@@ -297,7 +294,7 @@
 
     <section id="contact" class="section">
         <div class="container">
-            <h2>Let's connect and create solutions that drive growth, efficiency, and innovation</h2>
+            <h2>Connect for Growth and Innovation</h2>
             <div class="contact-options">
                 <a href="mailto:karam.almnajed@gmail.com" class="contact-button">
                     <i class="fas fa-envelope"></i>
