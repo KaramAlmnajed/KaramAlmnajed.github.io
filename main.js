@@ -93,4 +93,126 @@ document.addEventListener('DOMContentLoaded', function() {
             ticking = true;
         }
     });
+    
+    // Recommendations Carousel Functionality
+    const carousel = document.getElementById('recommendationsCarousel');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const indicatorsContainer = document.getElementById('carouselIndicators');
+    
+    if (carousel && prevBtn && nextBtn && indicatorsContainer) {
+        const cards = carousel.querySelectorAll('.recommendation-card');
+        let currentIndex = 0;
+        let isTransitioning = false;
+        
+        // Create indicators
+        cards.forEach((_, index) => {
+            const indicator = document.createElement('div');
+            indicator.className = 'carousel-indicator';
+            if (index === 0) indicator.classList.add('active');
+            indicator.setAttribute('aria-label', `Go to recommendation ${index + 1}`);
+            indicator.addEventListener('click', () => goToSlide(index));
+            indicatorsContainer.appendChild(indicator);
+        });
+        
+        const indicators = indicatorsContainer.querySelectorAll('.carousel-indicator');
+        
+        function updateCarousel() {
+            if (isTransitioning) return;
+            isTransitioning = true;
+            
+            carousel.scrollTo({
+                left: currentIndex * carousel.offsetWidth,
+                behavior: 'smooth'
+            });
+            
+            // Update indicators
+            indicators.forEach((indicator, index) => {
+                indicator.classList.toggle('active', index === currentIndex);
+            });
+            
+            setTimeout(() => {
+                isTransitioning = false;
+            }, 300);
+        }
+        
+        function goToSlide(index) {
+            if (isTransitioning) return;
+            currentIndex = Math.max(0, Math.min(index, cards.length - 1));
+            updateCarousel();
+        }
+        
+        function nextSlide() {
+            if (isTransitioning) return;
+            currentIndex = (currentIndex + 1) % cards.length;
+            updateCarousel();
+        }
+        
+        function prevSlide() {
+            if (isTransitioning) return;
+            currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+            updateCarousel();
+        }
+        
+        // Button event listeners
+        nextBtn.addEventListener('click', nextSlide);
+        prevBtn.addEventListener('click', prevSlide);
+        
+        // Touch/swipe support for mobile
+        let touchStartX = 0;
+        let touchEndX = 0;
+        
+        carousel.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+        }, { passive: true });
+        
+        carousel.addEventListener('touchend', (e) => {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipe();
+        }, { passive: true });
+        
+        function handleSwipe() {
+            const swipeThreshold = 50;
+            const diff = touchStartX - touchEndX;
+            
+            if (Math.abs(diff) > swipeThreshold) {
+                if (diff > 0) {
+                    nextSlide();
+                } else {
+                    prevSlide();
+                }
+            }
+        }
+        
+        // Keyboard navigation
+        carousel.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') {
+                e.preventDefault();
+                prevSlide();
+            } else if (e.key === 'ArrowRight') {
+                e.preventDefault();
+                nextSlide();
+            }
+        });
+        
+        // Auto-rotate (optional - uncomment if desired)
+        // let autoRotateInterval = setInterval(nextSlide, 5000);
+        // 
+        // carousel.addEventListener('mouseenter', () => {
+        //     clearInterval(autoRotateInterval);
+        // });
+        // 
+        // carousel.addEventListener('mouseleave', () => {
+        //     autoRotateInterval = setInterval(nextSlide, 5000);
+        // });
+        
+        // Handle window resize
+        let resizeTimeout;
+        window.addEventListener('resize', () => {
+            clearTimeout(resizeTimeout);
+            resizeTimeout = setTimeout(() => {
+                updateCarousel();
+            }, 250);
+        });
+    }
 }); 

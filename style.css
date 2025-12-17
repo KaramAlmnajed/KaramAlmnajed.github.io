@@ -2342,3 +2342,1192 @@ img {
         max-width: 70px;
     }
 }
+
+/* Section 1: Value Proposition Styles */
+#value-proposition {
+    background-color: var(--off-white);
+    padding: 100px 0 80px;
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #6e6e73;
+    margin-bottom: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.value-proposition-grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 1.5rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.value-card {
+    background: var(--card-background);
+    border-radius: 18px;
+    padding: 1.6rem 1.2rem;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    backdrop-filter: blur(12px);
+}
+
+.value-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 24px 55px rgba(0, 0, 0, 0.12);
+    border-color: rgba(0, 113, 227, 0.3);
+}
+
+.value-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 999px;
+    background: rgba(0, 113, 227, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.9rem;
+    color: var(--blue);
+}
+
+.value-icon i {
+    font-size: 1rem;
+}
+
+.value-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--blue);
+    margin-bottom: 0.6rem;
+}
+
+.value-what,
+.value-how,
+.value-tech {
+    font-size: 0.85rem;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 0.4rem;
+}
+
+.value-what strong,
+.value-how strong,
+.value-tech strong {
+    color: var(--near-black);
+    font-weight: 600;
+}
+
+/* Section 2: Applied Solutions Styles */
+#applied-solutions {
+    background-color: var(--white);
+    padding: 80px 0;
+}
+
+.solutions-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.solution-card {
+    background: var(--card-background);
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: var(--card-shadow);
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.solution-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+.solution-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 999px;
+    background: rgba(0, 113, 227, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    color: var(--blue);
+}
+
+.solution-icon i {
+    font-size: 1.3rem;
+}
+
+.solution-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--near-black);
+    margin-bottom: 1rem;
+}
+
+.solution-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.solution-list li {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 0.75rem;
+    padding-left: 1.25rem;
+    position: relative;
+}
+
+.solution-list li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--blue);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.solution-list li:last-child {
+    margin-bottom: 0;
+}
+
+/* Section 3: Technical Expertise Styles */
+#technical-expertise {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+}
+
+.technical-skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.tech-skill-card {
+    background: var(--card-background);
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: var(--card-shadow);
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.tech-skill-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+.tech-skill-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 999px;
+    background: rgba(0, 113, 227, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    color: var(--blue);
+}
+
+.tech-skill-icon i {
+    font-size: 1.3rem;
+}
+
+.tech-skill-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--near-black);
+    margin-bottom: 1rem;
+}
+
+.tech-skill-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tech-skill-list li {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 0.75rem;
+    padding-left: 1.25rem;
+    position: relative;
+}
+
+.tech-skill-list li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--blue);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.tech-skill-list li:last-child {
+    margin-bottom: 0;
+}
+
+/* Section 4: Specialized Competencies Styles */
+#specialized-competencies {
+    background-color: var(--white);
+    padding: 80px 0;
+}
+
+.competencies-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.competency-card {
+    background: var(--card-background);
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: var(--card-shadow);
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    text-align: center;
+}
+
+.competency-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+.competency-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 999px;
+    background: rgba(0, 113, 227, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.25rem;
+    color: var(--blue);
+}
+
+.competency-icon i {
+    font-size: 1.5rem;
+}
+
+.competency-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--near-black);
+    margin-bottom: 0.75rem;
+}
+
+.competency-description {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Section 5: Skills Impact Mapping Styles */
+#skills-impact-mapping {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+}
+
+.mapping-table-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    overflow-x: auto;
+}
+
+.skills-impact-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--white);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+}
+
+.skills-impact-table thead {
+    background: var(--blue);
+    color: var(--white);
+}
+
+.skills-impact-table th {
+    padding: 1.25rem 1rem;
+    text-align: left;
+    font-weight: 700;
+    font-size: 1rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.skills-impact-table th:first-child {
+    border-top-left-radius: 12px;
+}
+
+.skills-impact-table th:last-child {
+    border-top-right-radius: 12px;
+}
+
+.skills-impact-table tbody tr {
+    border-bottom: 1px solid #e5e5e5;
+    transition: background-color 0.2s ease;
+}
+
+.skills-impact-table tbody tr:hover {
+    background-color: rgba(0, 113, 227, 0.05);
+}
+
+.skills-impact-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.skills-impact-table td {
+    padding: 1.25rem 1rem;
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.skills-impact-table td:first-child {
+    font-weight: 600;
+    color: var(--near-black);
+}
+
+/* Responsive Styles for New Sections */
+@media (max-width: 1200px) {
+    .value-proposition-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+    
+    .competencies-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 992px) {
+    .value-proposition-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    
+    .solutions-grid,
+    .technical-skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    #value-proposition,
+    #applied-solutions,
+    #technical-expertise,
+    #specialized-competencies,
+    #skills-impact-mapping {
+        padding: 60px 0;
+    }
+    
+    .value-proposition-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.2rem;
+    }
+    
+    .competencies-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .value-card,
+    .solution-card,
+    .tech-skill-card,
+    .competency-card {
+        padding: 1.4rem 1.2rem;
+    }
+    
+    .skills-impact-table {
+        font-size: 0.85rem;
+    }
+    
+    .skills-impact-table th,
+    .skills-impact-table td {
+        padding: 0.9rem 0.75rem;
+    }
+}
+
+@media (max-width: 540px) {
+    .value-proposition-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .skills-impact-table {
+        font-size: 0.8rem;
+    }
+    
+    .skills-impact-table th,
+    .skills-impact-table td {
+        padding: 0.75rem 0.5rem;
+    }
+}
+
+/* Section 6: Professional Experience Styles */
+#professional-experience {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+}
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.experience-card {
+    background: var(--card-background);
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: var(--card-shadow);
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    backdrop-filter: blur(10px);
+}
+
+.experience-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+    border-color: rgba(0, 113, 227, 0.35);
+}
+
+.experience-header {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid rgba(0, 113, 227, 0.1);
+}
+
+.experience-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 999px;
+    background: rgba(0, 113, 227, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--blue);
+    flex-shrink: 0;
+}
+
+.experience-icon i {
+    font-size: 1.3rem;
+}
+
+.experience-title-group {
+    flex: 1;
+}
+
+.experience-company {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--near-black);
+    margin-bottom: 0.25rem;
+}
+
+.experience-role {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--blue);
+    margin-bottom: 0.25rem;
+}
+
+.experience-meta {
+    font-size: 0.9rem;
+    color: #666;
+    font-style: italic;
+    margin: 0;
+}
+
+.experience-responsibilities {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.experience-responsibilities li {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 0.75rem;
+    padding-left: 1.25rem;
+    position: relative;
+}
+
+.experience-responsibilities li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--blue);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.experience-responsibilities li:last-child {
+    margin-bottom: 0;
+}
+
+/* Section 7: Education & Academic Achievements Styles */
+#education-achievements {
+    background-color: var(--white);
+    padding: 80px 0;
+}
+
+.education-card {
+    background: var(--card-background);
+    border-radius: 16px;
+    padding: 2.5rem;
+    box-shadow: var(--card-shadow);
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    max-width: 1000px;
+    margin: 0 auto;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.education-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+.education-header {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid rgba(0, 113, 227, 0.1);
+}
+
+.education-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 999px;
+    background: rgba(0, 113, 227, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--blue);
+    flex-shrink: 0;
+}
+
+.education-icon i {
+    font-size: 1.5rem;
+}
+
+.education-title-group {
+    flex: 1;
+}
+
+.education-institution {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--near-black);
+    margin-bottom: 0.5rem;
+}
+
+.education-degree {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--blue);
+    margin-bottom: 0.5rem;
+}
+
+.education-grade {
+    font-size: 1rem;
+    color: #555;
+    margin: 0;
+}
+
+.education-content {
+    padding-top: 0.5rem;
+}
+
+.education-achievements {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.education-achievements li {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 0.75rem;
+    padding-left: 1.25rem;
+    position: relative;
+}
+
+.education-achievements li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--blue);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.education-achievements li:last-child {
+    margin-bottom: 0;
+}
+
+/* Section 8: Certifications & Mastery Styles */
+#certifications-mastery {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+}
+
+.certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.certification-card {
+    background: var(--card-background);
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: var(--card-shadow);
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    backdrop-filter: blur(10px);
+}
+
+.certification-card.featured {
+    border-color: rgba(0, 113, 227, 0.2);
+}
+
+.certification-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+    border-color: rgba(0, 113, 227, 0.35);
+}
+
+.certification-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 999px;
+    background: rgba(0, 113, 227, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    color: var(--blue);
+}
+
+.certification-icon i {
+    font-size: 1.3rem;
+}
+
+.certification-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--near-black);
+    margin-bottom: 1rem;
+}
+
+.certification-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.certification-list li {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 0.75rem;
+    padding-left: 1.25rem;
+    position: relative;
+}
+
+.certification-list li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--blue);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.certification-list li:last-child {
+    margin-bottom: 0;
+}
+
+.certification-list li strong {
+    color: var(--near-black);
+    font-weight: 600;
+}
+
+.certification-count {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.certification-count strong {
+    color: var(--near-black);
+    font-weight: 700;
+}
+
+.institution-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.institution-tag {
+    background: rgba(0, 113, 227, 0.1);
+    color: var(--blue);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    border: 1px solid rgba(0, 113, 227, 0.2);
+    transition: all 0.3s ease;
+}
+
+.institution-tag:hover {
+    background: rgba(0, 113, 227, 0.15);
+    transform: translateY(-2px);
+}
+
+.certification-expertise {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.6;
+    margin-top: 1rem;
+}
+
+/* Section 10: Expertise Overview Styles */
+#expertise-overview {
+    background-color: var(--white);
+    padding: 80px 0;
+}
+
+.expertise-overview-grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 1.5rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.expertise-item-card {
+    background: var(--card-background);
+    border-radius: 12px;
+    padding: 1.5rem 1.2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    backdrop-filter: blur(12px);
+    min-height: 140px;
+    justify-content: center;
+}
+
+.expertise-item-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+    border-color: rgba(0, 113, 227, 0.3);
+}
+
+.expertise-item-icon {
+    font-size: 1.8rem;
+    color: var(--blue);
+    margin-bottom: 0.75rem;
+}
+
+.expertise-item-text {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+/* Responsive Styles for New Sections */
+@media (max-width: 1200px) {
+    .expertise-overview-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 992px) {
+    .experience-grid,
+    .certifications-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .expertise-overview-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    #professional-experience,
+    #education-achievements,
+    #certifications-mastery,
+    #expertise-overview {
+        padding: 60px 0;
+    }
+    
+    .experience-card,
+    .certification-card {
+        padding: 1.5rem;
+    }
+    
+    .education-card {
+        padding: 2rem 1.5rem;
+    }
+    
+    .expertise-overview-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.2rem;
+    }
+    
+    .expertise-item-card {
+        padding: 1.2rem 1rem;
+        min-height: 120px;
+    }
+    
+    .expertise-item-icon {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .expertise-item-text {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 540px) {
+    .expertise-overview-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .experience-header,
+    .education-header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .experience-icon,
+    .education-icon {
+        align-self: flex-start;
+    }
+}
+
+/* Section 11: Recommendations & Testimonials Styles */
+.recommendations-section {
+    background: linear-gradient(135deg, #f5f5f7 0%, #e8e8ed 100%);
+    padding: 80px 0;
+    position: relative;
+}
+
+.recommendations-title {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--near-black);
+}
+
+.recommendations-carousel-wrapper {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.recommendations-carousel {
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 2rem;
+    padding-bottom: 1rem;
+}
+
+.recommendation-card {
+    min-width: 100%;
+    scroll-snap-align: start;
+    background: var(--white);
+    border-radius: 16px;
+    padding: 2.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.recommendation-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
+}
+
+.recommendation-header {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid rgba(0, 113, 227, 0.1);
+}
+
+.recommendation-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--near-black);
+    margin-bottom: 0.5rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.recommendation-title {
+    font-size: 1rem;
+    font-style: italic;
+    color: #666;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.recommendation-body {
+    flex: 1;
+    margin-bottom: 1.5rem;
+}
+
+.recommendation-body p {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #444;
+    margin: 0;
+    text-align: left;
+}
+
+.recommendation-footer {
+    margin-top: auto;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.recommendation-contact {
+    font-size: 0.85rem;
+    font-style: italic;
+    color: #666;
+    margin: 0;
+}
+
+.recommendation-contact a {
+    color: var(--blue);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.recommendation-contact a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--white);
+    border: 2px solid rgba(0, 113, 227, 0.2);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 10;
+    color: var(--blue);
+    font-size: 1.2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-btn:hover {
+    background: var(--blue);
+    color: var(--white);
+    border-color: var(--blue);
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 113, 227, 0.3);
+}
+
+.carousel-btn:active {
+    transform: translateY(-50%) scale(0.95);
+}
+
+.carousel-btn-prev {
+    left: -25px;
+}
+
+.carousel-btn-next {
+    right: -25px;
+}
+
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.carousel-indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(0, 113, 227, 0.3);
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.carousel-indicator.active {
+    background: var(--blue);
+    transform: scale(1.2);
+}
+
+.carousel-indicator:hover {
+    background: rgba(0, 113, 227, 0.5);
+    transform: scale(1.1);
+}
+
+/* Responsive Styles for Recommendations Section */
+@media (max-width: 992px) {
+    .recommendations-title {
+        font-size: 32px;
+    }
+    
+    .recommendation-card {
+        padding: 2rem;
+    }
+    
+    .carousel-btn {
+        width: 45px;
+        height: 45px;
+        font-size: 1rem;
+    }
+    
+    .carousel-btn-prev {
+        left: -15px;
+    }
+    
+    .carousel-btn-next {
+        right: -15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .recommendations-section {
+        padding: 60px 0;
+    }
+    
+    .recommendations-title {
+        font-size: 28px;
+        margin-bottom: 2rem;
+    }
+    
+    .recommendations-carousel-wrapper {
+        padding: 0 3rem;
+    }
+    
+    .recommendation-card {
+        padding: 1.5rem;
+    }
+    
+    .recommendation-name {
+        font-size: 1.3rem;
+    }
+    
+    .recommendation-title {
+        font-size: 0.9rem;
+    }
+    
+    .recommendation-body p {
+        font-size: 16px;
+    }
+    
+    .carousel-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 0.9rem;
+    }
+    
+    .carousel-btn-prev {
+        left: 5px;
+    }
+    
+    .carousel-btn-next {
+        right: 5px;
+    }
+}
+
+@media (max-width: 540px) {
+    .recommendations-title {
+        font-size: 24px;
+    }
+    
+    .recommendations-carousel-wrapper {
+        padding: 0 2.5rem;
+    }
+    
+    .recommendation-card {
+        padding: 1.25rem;
+    }
+    
+    .recommendation-name {
+        font-size: 1.2rem;
+    }
+    
+    .recommendation-body p {
+        font-size: 15px;
+    }
+    
+    .carousel-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 0.8rem;
+    }
+    
+    .carousel-btn-prev {
+        left: 0;
+    }
+    
+    .carousel-btn-next {
+        right: 0;
+    }
+}
